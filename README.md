@@ -1,25 +1,115 @@
-### 🛡️ JarInspect
-> **Forensic & Intelligence Suite for Minecraft Environments**
-> <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white"/> <img src="https://img.shields.io/badge/WinUI%203-0078D4?style=flat-square&logo=windows&logoColor=white"/>
+<div align="center">
 
-A specialized desktop application designed for players, modpack developers, and security analysts to gain deep visibility into installations and runtime environments.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=2B2D31&height=200&section=header&text=JarInspect&fontSize=60&fontColor=ffffff&desc=Minecraft%20Intelligence%20Suite&descFontSize=20&descAlignY=70" alt="JarInspect Banner"/>
 
-* **Cryptographic Auditing:** Scans `.jar` archives for valid signatures, detects tampering, and analyzes obfuscation mappings to flag unauthorized modifications or socket injections.
-* **Dynamic Integrity Scoring:** Calculates a real-time (0–100) health score for any instance, backed by itemized deductions for shadowed packages or missing dependencies.
-* **Launcher & Server Intelligence:** Automatically discovers instances across 11+ major launchers (Prism, MultiMC, Lunar, Feather, etc.) and parses local `servers.dat` NBT registries to extract IPs, rendered icons, and join history.
-* **Premium Interface:** Wrapped in a sleek, responsive dark theme (`#0D0E12`) with smooth splash transitions and zero visual clutter.
+<br>
+
+<img src="https://img.shields.io/badge/Status-Private_Beta-ED8B00?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
+<img src="https://img.shields.io/badge/Built_By-@Sleepy-4F8CFF?style=for-the-badge&logo=github&logoColor=white"/>
+
+<br><br>
+</div>
+
+> ⚠️ **Notice:** Source code is not fully public yet. 
+
+**JarInspect** is a comprehensive Windows desktop suite for Minecraft instance forensics, mod verification, and launcher intelligence. 
+
+It allows you to inspect installed Minecraft launchers, scan mod archives for tamper indicators, verify cryptographic signatures against official repositories, and generate an itemized security assessment — all inside a sleek, premium native desktop interface. Designed for diagnostics, security research, modpack auditing, and runtime visibility using documented APIs and bytecode analysis.
 
 <br>
 <hr>
 <br>
 
-### ⚡ DLL Activity Monitor
-> **Real-Time Windows Process & Module Tracker**
-> <img src="https://img.shields.io/badge/C++17-00599C?style=flat-square&logo=cplusplus&logoColor=white"/> <img src="https://img.shields.io/badge/DirectX%2011-44CC11?style=flat-square&logo=windows&logoColor=white"/> <img src="https://img.shields.io/badge/ImGui-1C1C1C?style=flat-square"/>
+## ✨ Core Features
 
-A lightweight, high-performance desktop utility utilizing documented Windows APIs for diagnostics, visibility, and runtime analysis without memory dumping or process modification.
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🛡️ Forensics & Security</h3>
+      <ul>
+        <li><b>Integrity Scoring</b> — Live 0–100 forensic score for any Minecraft instance.</li>
+        <li><b>Itemized Deductions</b> — Transparent calculation breakdown explaining every score adjustment.</li>
+        <li><b>Signature Validation</b> — Inspect cryptographic signatures (<code>META-INF/*.RSA</code>, <code>*.DSA</code>, <code>*.SF</code>).</li>
+        <li><b>Tamper Detection</b> — Detect modified binaries, corrupt archives, and byte-level mismatches.</li>
+        <li><b>Bytecode Auditing</b> — Distinguish standard ProGuard mappings from suspicious code injection.</li>
+        <li><b>Duplicate Shadowing</b> — Flag class namespace collisions across separate <code>.jar</code> archives.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧭 Multi-Launcher Intelligence</h3>
+      <ul>
+        <li><b>Universal Detection</b> — Automatically detects Vanilla, Prism, MultiMC, CurseForge, Modrinth, Lunar, Badlion, Feather, SKLauncher, ATLauncher, and Technic.</li>
+        <li><b>Instance Exploration</b> — Inspect install paths, game directories, configurations, and mod folders.</li>
+        <li><b>Instant Path Switching</b> — Seamlessly switch scan contexts directly to any discovered instance.</li>
+        <li><b>Runtime Inspection</b> — Monitor active Java runtimes, command-line arguments, and memory limits.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-* **Live Process Attachment:** Hook into running processes via PID (with optional auto-attach for Minecraft) to track module loading, view persistent timestamps, and maintain an active session timeline.
-* **Risk & Threat Analysis:** Cross-examine loaded modules with digital signature verification, SHA256 hash generation, and automated risk scoring while filtering out standard System DLLs.
-* **Session Management:** Export discovered DLLs directly from disk, save monitoring sessions, and extract history logs for debugging or security reviews.
-* **High-Performance UI:** Built on a clean, modern dark interface that refreshes instantly without resetting data, featuring organized tabs and live status indicators.
+<br>
+
+## 📦 Mod & Server Analysis
+
+* 🔎 **API Cross-Verification** — Verify local `.jar` hashes against official Modrinth database releases.
+* 🏷️ **Clean Categorization** — Clear distinction between `Verified` official mods, `Unknown` custom/unindexed archives, and `Modified` binaries.
+* 🌐 **Server Registry Parsing** — Parse local `servers.dat` NBT files to render real server icons, IPs, and join activity.
+
+<br>
+<hr>
+<br>
+
+## 🛠️ Built With
+
+<div align="left">
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white"/>
+  <img src="https://img.shields.io/badge/.NET%208-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
+  <img src="https://img.shields.io/badge/WinUI%203-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
+  <img src="https://img.shields.io/badge/XAML-0C54C2?style=for-the-badge"/>
+</div>
+
+* **Cryptographic Hashing & Signature Verification APIs**
+* **NBT / Java Archive Parsing**
+
+<br>
+<hr>
+<br>
+
+## 📊 Export, Reporting & UI
+
+| Feature | Description |
+|---|---|
+| 📄 **Forensic Reports** | Export structured findings, risk levels, and evidence summaries. |
+| 💾 **Session Logs** | Track and record application events and historical scans. |
+| 🌙 **Modern Dark Theme** | Sleek, minimal `#0D0E12` palette with polished geometric tokens. |
+| 🚀 **Animated Splash** | Smooth zoom-in and slide-up startup transitions. |
+| ⚡ **Native Performance** | Built on WinUI 3 for responsive navigation and custom title bars. |
+
+<br>
+<hr>
+<br>
+
+## 🎯 Use Cases
+
+* 🧩 **Modpack debugging** & compatibility audits.
+* 🔒 **Minecraft instance** security verification.
+* 🦠 **Malware & tamper diagnostics** in community mods.
+* 🖥️ **Server administration** & client troubleshooting.
+* 📁 **Development workflows** & archive exploration.
+
+<br>
+<hr>
+<br>
+
+## ⚠️ Security Notes
+
+* **Non-Invasive:** Passive archive and configuration inspection only.
+* **Safe Diagnostics:** Designed purely for visibility and forensic auditing.
+* **Zero Modification:** No process injection or memory modification.
+
+<br>
+
+<div align="center">
+  <p><i>Built by <b>@Sleepy</b> (2026)</i></p>
+</div>
