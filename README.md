@@ -1,21 +1,33 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=2B2D31&height=200&section=header&text=JarInspect&fontSize=60&fontColor=ffffff&desc=Minecraft%20Intelligence%20Suite&descFontSize=20&descAlignY=70" alt="JarInspect Banner"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=2B2D31&height=200&section=header&text=JarInspect&fontSize=60&fontColor=ffffff&desc=Advanced%20Minecraft%20ScreenShare%20Tool&descFontSize=20&descAlignY=70" alt="JarInspect Banner"/>
 
 <br>
 
-<img src="https://img.shields.io/badge/Status-Private_Beta-ED8B00?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Beta-ED8B00?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"/>
 <img src="https://img.shields.io/badge/Built_By-@Sleepy-4F8CFF?style=for-the-badge&logo=github&logoColor=white"/>
 
 <br><br>
 </div>
 
-> ⚠️ **Notice:** Source code is not fully public yet. 
+**JarInspect** is an advanced Minecraft screenshare tool designed specifically to catch cheaters. It provides deep visibility into client installations, allowing you to inspect Minecraft launchers, scan mod archives for tamper indicators, verify cryptographic signatures, and generate an itemized security assessment — all inside a sleek, premium native desktop interface.
 
-**JarInspect** is a comprehensive Windows desktop suite for Minecraft instance forensics, mod verification, and launcher intelligence. 
+<br>
+<hr>
+<br>
 
-It allows you to inspect installed Minecraft launchers, scan mod archives for tamper indicators, verify cryptographic signatures against official repositories, and generate an itemized security assessment — all inside a sleek, premium native desktop interface. Designed for diagnostics, security research, modpack auditing, and runtime visibility using documented APIs and bytecode analysis.
+## 🛠️ Built With
+
+<div align="left">
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white"/>
+  <img src="https://img.shields.io/badge/.NET%208-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
+  <img src="https://img.shields.io/badge/WinUI%203-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
+  <img src="https://img.shields.io/badge/XAML-0C54C2?style=for-the-badge"/>
+</div>
+
+* **Cryptographic Hashing & Signature Verification APIs**
+* **NBT / Java Archive Parsing**
 
 <br>
 <hr>
@@ -60,22 +72,6 @@ It allows you to inspect installed Minecraft launchers, scan mod archives for ta
 <hr>
 <br>
 
-## 🛠️ Built With
-
-<div align="left">
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white"/>
-  <img src="https://img.shields.io/badge/.NET%208-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
-  <img src="https://img.shields.io/badge/WinUI%203-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
-  <img src="https://img.shields.io/badge/XAML-0C54C2?style=for-the-badge"/>
-</div>
-
-* **Cryptographic Hashing & Signature Verification APIs**
-* **NBT / Java Archive Parsing**
-
-<br>
-<hr>
-<br>
-
 ## 📊 Export, Reporting & UI
 
 | Feature | Description |
@@ -88,26 +84,6 @@ It allows you to inspect installed Minecraft launchers, scan mod archives for ta
 
 <br>
 <hr>
-<br>
-
-## 🎯 Use Cases
-
-* 🧩 **Modpack debugging** & compatibility audits.
-* 🔒 **Minecraft instance** security verification.
-* 🦠 **Malware & tamper diagnostics** in community mods.
-* 🖥️ **Server administration** & client troubleshooting.
-* 📁 **Development workflows** & archive exploration.
-
-<br>
-<hr>
-<br>
-
-## ⚠️ Security Notes
-
-* **Non-Invasive:** Passive archive and configuration inspection only.
-* **Safe Diagnostics:** Designed purely for visibility and forensic auditing.
-* **Zero Modification:** No process injection or memory modification.
-
 <br>
 
 <div align="center">
