@@ -28,9 +28,6 @@
 
 <br>
 
-* **Cryptographic Hashing & Signature Verification APIs**
-* **NBT / Java Archive Parsing**
-
 <br>
 <hr>
 <br>
